@@ -1,0 +1,101 @@
+body{
+    background-color: rgb(3, 31, 65);
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+div{
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+}
+
+#main_menu{
+    background-color: #063a7d;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: block;
+}
+
+#main_menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+#main_menu li a{
+    display: block;
+    padding: 30px 120px;
+    text-decoration: none;
+    color: rgb(143, 215, 248);
+    font-size: 20px;
+}
+
+#main_menu li a:hover{
+    color: rgb(218, 233, 250);
+}
+
+#main_menu ul.level_2{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    right: 0px;
+}
+
+#main_menu ul.level_2 li a:hover{
+    color: #ffffff;
+    background-color: rgb(19, 85, 171);
+    padding: 20px;
+    right: 0px;
+}
+
+#main_menu ul.level_1 > li:hover ul.level_2{
+    display: block;
+}
+
+body{
+    background-image: url(../img/jellyfish_1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.content{
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(180, 201, 226);
+    animation: fadein 5s;
+    font-size: 25px;
+    position: fixed;
+    top: 65%;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: 0px;
+}
+
+.pos_fixed{
+    animation: fadein 3s;
+    h1{
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        margin-left: -35px;
+        margin-top: 0px;
+        }
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:1.5;
+    }
+    100% {
+        opacity:3;
+    }
+}

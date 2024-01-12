@@ -1,0 +1,200 @@
+body{
+    background-color: rgb(3, 31, 65);
+    padding-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+}
+div{
+    text-align: center;
+}
+
+ul{
+    margin: 0;
+}
+
+#main_menu{
+    background-color: #063a7d;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    display: block;
+}
+
+#main_menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+#main_menu li a{
+    display: block;
+    padding: 30px 120px;
+    text-decoration: none;
+    color: rgb(143, 215, 248);
+    font-size: 20px;
+}
+
+#main_menu li a:hover{
+    color: rgb(218, 233, 250);
+}
+
+#main_menu ul.level_2{
+    display: none;
+    position: absolute;
+    padding: 20px;
+    right: 0px;
+}
+
+#main_menu ul.level_2 li a:hover{
+    color: #ffffff;
+    background-color: rgb(19, 85, 171);
+    padding: 20px;
+    right: 0px;
+}
+
+#main_menu ul.level_1 > li:hover ul.level_2{
+    display: block;
+}
+
+div{
+    text-align: center;
+}
+
+.pos_fixed{
+    padding: 1px;
+    position: relative;
+    top: 0;
+    right: 0;
+    background-color: rgb(25, 63, 99)
+}
+
+.pos_fixed{
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    0% {
+        opacity:0;
+    }
+    50%{
+        opacity:1;
+    }
+    100% {
+        opacity:2;
+    }
+}
+
+img{
+    max-width: 30%;
+    max-height: 30%;
+
+}
+
+h2{
+    color: rgb(152, 231, 233);
+    text-shadow: 0px 0px 5px rgb(180, 212, 226);
+}
+
+html, body {
+	height: 100%;
+}
+
+.fixed_bg, .infos {
+	position: relative;
+	height: 100%;
+}
+
+.fixed_bg {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.bg_1 {
+	background-image: url(../img/jellyfish_2.jpg);
+}
+
+.bg_2 {
+	background-image: url(../img/jellyfish_3.jpg);
+}
+
+.bg_3 {
+	background-image: url(../img/jellyfish_5.jpg);
+}
+
+.bg_4 {
+	background-image: url(../img/jellyfish_4.jpg);
+}
+
+.bg_5{
+    background-image: url(../img/jellyfish_6.jpg);
+}
+
+.color1 {
+	background-color: #0c1223;
+    font-size: 10px;
+}
+
+.color2 {
+	background-color: #3e586d;
+    font-size: 10px;
+}
+
+.color3 {
+	background-color: #9d7f65;
+    font-size: 10px;
+}
+
+.color4 {
+	background-color: #3e586d;
+    font-size: 10px;
+}
+
+.color5 {
+	background-color: #0c1223;
+    font-size: 10px;
+}
+
+.text{
+    background-size: cover;
+}
+
+.vcenter {
+	position: absolute;
+	left: 50%;
+	top: 80%;
+	color: #ffffff;
+	text-align: center;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%); 
+	text-align: center;
+    p{
+        width:400px;
+        height:100px;
+        position:relative;
+        bottom: 200px;
+    }
+}
+
+.shadow { 
+	text-shadow: 0px 0px 10px rgba(164, 183, 192, 0.9); 
+}
+
+.privew{
+    text-align: center;
+    color: azure;
+}
+
+.T a{
+    text-decoration: none;
+    color: rgb(236, 232, 226);
+    font-size: 20px;
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
